@@ -1,5 +1,9 @@
+h1 {margin-block-end: 0em}
+
 p {text-align: justify; line-height:25px; font-size:15px}
+
 div {font-family:verdana}
+
 a{text-decoration: none; color:#C70039}
 a:hover{text-decoration: underline; color: #FF5733} 
 
