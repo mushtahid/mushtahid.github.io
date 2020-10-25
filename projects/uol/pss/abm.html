@@ -43,27 +43,27 @@
 			What is Agent-Based Model?
 			</h2>		
 			<p>
-			Traditionally, we have been collecting individal level
+			Traditionally, we have been collecting individual level
 			date to generate summary statistic and carry out inferential analysis. This is undoubtedly of 
 			immense importance as it allows us to predict not only population but also
 			individual level behaviour (provided raw data has been collected at an individual
-			level). However, the inidividual level measures we obtain are based on the 
+			level). However, the individual level measures we obtain are based on the 
 			summary statistic and may not* represent how a particular individual may act.			
 			It might be helpful to think of this as a low-resolution image
-			where you can get a sense of the overall picture but not really the fine details.
+			where you can get a sense of the overall picture but not the fine details.
 			</p>
 			<p>
 			Agent-Based Models (ABM) on the other hand, allows us to keep track of an individual as 
-			as an individual! Thus, it allows us to analyse the risks/behaviours of an individal
+			an individual! Thus, it allows us to analyse the risks/behaviours of an individual
 			more accurately and thus generate a better individual and population level model. You
 			can think of this as a high-resolution image where you can see the finer details!
 			You can <a title="Learn more about ABM" target="_blank" href="https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part1/index.html">
 			learn more about ABM from the course page <i class="fas fa-external-link-alt"></i></a>.
 			</p>
 			<p>
-			* <e>I am not in any way suggesting that individual level measures such as relative risk/odds ratio
+			* <em>I am not in any way suggesting that individual level measures such as relative risk/odds ratio
 			obtained from traditional research methods are not "good enough"! Such methods have a proven track record 
-			and in any case do not need any approval from me!</e>
+			and in any case, do not need any "approval" from me!</em>
 			</p>
 		</article>
 		
@@ -78,14 +78,14 @@
 			
 				<section>
 					<h3>What programming language/software was used to build this?</h3>
-					<p>This was coded in Python 3 using Spyder. Extensive use of f-string is applied and 
+					<p>This was coded in Python 3 using Spyder. Extensive use of f-string is applied, and 
 					thus python 3.6 + is a requirement.
 					</p>
 				</section>
 			
 				<section>
 					<h3>Where can I access the model?</h3>
-					Please visit my <a href="https://github.com/mushtahid/GEOG5995-Practicals">ABM github repository</a>. 
+					Please visit my <a href="https://github.com/mushtahid/GEOG5995-Practicals">ABM GitHub repository</a>. 
 				</section>
 			
 			<section>
@@ -111,38 +111,41 @@
 					<section>
 						<h4>Animals</h4>
 						<p>
-						Animals consists of sheep and wolves. The animals have access to each others location
-						in the environment. They also have a store value which represents either their energy level
+						Animals consist of sheep and wolves. The animals have access to each other's location
+						in the environment and know how far apart they are by calculating the Euclidean distance
+						using their Cartesian coordinates (x,y) in the 2D environment via the Pythagorean theorem.</p>
+						
+						<p>They also have a store value which represents either their energy level
 						or food stores/resources depending on the context. Their initial store values are randomly
 						assigned. Whether the store represents food resources or energy is explained in the sections
 						below.</p>
 						<p>
 						The animals can move around the environment, identify
-						the closest animal if one is found withiin a certain minimum distance, get close to it
-						and interact with it if they are within a certain action distancec. 
-						The interaction can be an attemp to breed (either successful or failed),
+						the closest animal if one is found within a certain minimum distance, get close to it
+						and interact with it if they are within a certain action distance. 
+						The interaction can be an attempt to breed (either successful or failed),
 						share resources with each other (for sheep), fight with each other (for wolves).
 						</p>
 						<p>
-						During movements, boundary conditions are set up as such that they animals do not go
-						beyond the 300x300 limits of the enivronment. If the animals are not trying to run
+						During movements, boundary conditions are set up as such that the animals do not go
+						beyond the 300x300 limits of the environment. If the animals are not trying to run
 						towards (or exclusively for the sheep, away from the wolves), the speed of the normal 
-						movement is based on their current store value and random probability. During normal movement a 
+						movement is based on their current store value and random probability. During normal movement, a 
 						certain amount of store value is deducted as energy lost during movement.</p>
 						
-						<p>If the animals of same specis are within a certain action distance, and if both of them have
+						<p>If the animals of the same species are within a certain action distance, and if both of them have
 						a certain energy level, they will attempt to breed. Whether breeding will be successful or not
-						depends on random probability. However, an attemp at breeding will cost both animals energy,
-						whcih is half of the average of both animals.</p>
+						depends on random probability. However, a breeding attempt will cost both animals energy, 
+						which is half of the average of both animals.</p>
 						
 							<section>
 							<h5>The Sheep</h5>
 							<p>A. The first action of a sheep is to check if any wolves are nearby within
 							a certain minimum distance. This minimum distance can be thought of as the range of 
 							vision of the sheep. This is set up by default as half of the range of vision of 
-							the wolves (as the wolves are predators they should have higher range of vision).
-							If a sheep finds a one or more wolves within its proximity (minimum distance), 
-							it runs away from the closest one. While running away it does not eat any grass from the environment.</p>
+							the wolves (as the wolves are predators they should have a higher range of vision).
+							If a sheep finds one or more  close wolves within its proximity (minimum distance), 
+							it runs away from the closest one. While running away, it does not eat any grass from the environment.</p>
 							
 							<p>B. If no close wolf is found, it looks for the closest sheep provided that it has a certain 
 							minimum store value. If it finds one or more close sheep within its proximity, it moves towards the closest one and 
@@ -153,10 +156,10 @@
 							<p>If a sheep finds the closest wolf and runs towards it and manages to get it within action distance, 
 							interaction takes place.
 							Interaction for sheep can be an attempt at breeding or sharing resources. Both sheep will undertake
-							an attemp at breeding provided that the second sheep also has a certain minimum ernegy (store value). 
+							an attempt at breeding provided that the second sheep also has a certain minimum energy (store value). 
 							The breeding success will depend on probability as mentioned earlier.</p>
 							
-							<p>If, however, the closest sheep does not have enough energy, both sheep share their food resources (store)
+							<p>If, however, the closest sheep does not have enough energy, both sheep share their food resources (store),
 							and their store values become average. This is because their main aim is survival!</p>
 							
 							<p>C. If the current sheep does not have the required minimum energy to look for other sheep, it moves 
@@ -170,24 +173,24 @@
 						
 							<section>
 							<h5>The Wolves</h5>
-							<p>The wolves actions depends on a their store value or a combination of theri store value 
+							<p>The wolves actions depend on their store value or a combination of their store value 
 							and random probability.</p>
 							
 							<p>A. If a wolf has energy less than certain minimum store value or if it has more than the 
 							minimum store value and probability is between the default setup of 0.25 and 0.50, it 
 							looks for food (sheep) within a certain minimum distance (proximity). If a sheep is found
 							within a certain action distance, it eats the sheep. If one or more sheep are found within
-							the proximity, it runs towards the closest one. If no close sheep are found, it moves normally.
+							the proximity, it runs towards the closest one. If no close sheep is found, it moves normally.
 							
 							<p>The condition - if it has more than the minimum store value and probability is between the default 
-							setup of 0.25 and 0.50 - is set up because otherwise it was observed that the wovles were not interacting with
-							the sheep even if they were within proximity or action distance until their energy levels drop below minimum energy 
+							setup of 0.25 and 0.50 - is set up because otherwise it was observed that the wolves were not chasing or interacting with
+							the sheep even if one or more sheep were within proximity or action distance until their energy levels drop below minimum energy 
 							via normal movement. However, enabling this condition seems to have done two things:</p>
 							<ol>
 							<li>The wolves now also eat the sheep if they have more than minimum energy and probability conditions are 
 							right!</li>
-							<li>The wolves also seems to behave like a pack where one wolf which has eaten seems to sometimes
-							chase the sheep towards other wolves. This however, admittedly was not an intentional setup and is completely
+							<li>The wolves also seem to behave like a pack where one wolf which has eaten seems to sometimes
+							chase the sheep towards other wolves. This, however, admittedly was not an intentional setup and is completely
 							based on random probability of another wolf being present in the line of direction of the sheep being chased!</li>
 							</ol>
 							
@@ -195,17 +198,16 @@
 							it looks for other wolves within proximity. If one more wolves are found within proximity, it moves closer to the
 							closest one.<p>
 
-							<p>Once the closest wolf is within action distance, the current sheep interacts with it. The interaction can be an attemp at 
+							<p>Once the closest wolf is within action distance, the current sheep interacts with it. The interaction can be an attempt at 
 							breeding or fight. The wolves will attempt to breed if the closest wolf also has energy more than the minimum energy. 
-							Just like the sheep, the success/failure of the breeding attemp is probability based. Similary, breeding cost is 
-							applied.</p>
+							Just like the sheep, the success/failure of the breeding attempt is probability based. Similarly, the breeding cost is applied</p>
 							<p>
-							If the closest wolf's energy is below the minimum energy, they will fight and the 
+							If the closest wolf's energy is below the minimum energy, they will fight, and the 
 							winner depends on probability. The default setup is such that if the random value is > probability value, the current wolf will 
-							win half of the store of the closest wolf, and vice versa! If on the other hand, no close wolf is found, the wolf will
+							win half of the store of the closest wolf and vice versa! If on the other hand, no close wolf is found, the wolf will
 							move normally.</p>
 							
-							<p>C. If none of the inital conditions of A or B are met, the wolf will move normally.
+							<p>C. If none of the initial conditions of A or B is met, the wolf will move normally.
 							</p>
 							</section>
 					</section>
@@ -215,19 +217,19 @@
 			<section>
 				<h3>Additional quarks of the ABM model</h3>
 				<p>The model will save the environment data once it has been run to another text file. The way it's set up 
-				currently will overwrite the previous output</p>
-				<p>It will also save the total store value of the sheep and wolves in seperate files and will add the
+				currently will overwrite the previous output.</p>
+				<p>It will also save the total store value of the sheep and wolves in separate text files and will add the
 				values of subsequent runs of the model instead of overwriting.</p>
 				
 			</section>
 			
 			<section>
 				<h3>How to run the Model</h3>
-				<p>The model can be run from command promt by the code <code>python Final_Model.py</code>. Please ensure
+				<p>The model can be run from the command prompt by the code <code>python Final_Model.py</code>. Please ensure
 				you run cmd within the same directory.</p>
 				
 				<p>The prompt will then ask you if you want to modify certain variables. There are 11 modifiable variables
-				that you can alter. A description of what each variable does will be provided. If you want to modify
+				that you can alter. A description of what each variable does will be provided. If you want to modify the variables,
 				input 'y' (lowercase and without ''). You will still have the option to run with the default values for 
 				individual variables if you want to do so.</p>
 				
@@ -235,25 +237,25 @@
 				open a GUI where you will see a Menu. Click the "Run ABM Model" button from the Menu which will initiate the model.</p>
 				
 				<p>You will be able to see the animals in the environment interacting with each other and the environment. The sheep
-				are the white ones and the wolves are the black ones!</p>
+				are the white ones, and the wolves are the black ones!</p>
 				
-				<p>In the cmd, a prinout of the details of each iteration will be presented. The details will include the action 
-				of each sheep followed by the actions of each wolf! You will also the time to process each iteration. At the end
-				of the model you will be presented with the final number of sheep and wolves and their total store values and the total
+				<p>In the cmd, a printout of the details of each iteration will be presented. The details will include the action 
+				of each sheep, followed by the actions of each wolf! You will also the time to process each iteration. At the end
+				of the model, you will be presented with the final number of sheep and wolves and their total store values and the total
 				time it took to run the model for the specified number of iterations.</p>
 			</section>
 			
 			<section>
 				<h3>A bit about how I debugged the model</h3>
 				<p>
-				The fist thing was to ensure random seed was enabled and randome shuffling of animals are commented out.
+				The first thing was to ensure random seed was enabled, and random shuffling of animals are commented out.
 				Secondly, once you run the model, it will be clear to you that this presents with extensive details of the actions of each sheep and wolf.
 				This allows me to easily debug the model by searching for keywords and ensure the model is working as intended. To aid with the
-				debuggin, I diverted the output from the console to a txt file which allowed me to qucik search for keywords using 
+				debugging, I diverted the output from the console to a text file which allowed me to quick search for keywords using 
 				Notepad++. Diverting the output also enabled me to compare output from an earlier stable version to the latest one, for example,
 				when I was moving some of the functions to the Final_framwork.py module. Outputs were compared by both importing the outputs 
 				in two lists and by comparing if the contents of the lists are the same using <code>==</code> and also by the cmd 
-				file comapare command: <code>fc /lb2</code>. The codes to divert are commented out as if these are active, the model will not
+				file compare command: <code>fc /lb2</code>. The codes to divert are commented out because if these are active the model will not
 				run from cmd. However, if you wish to enable and divert the output, please use an IDE such as Spyder, which will ensure you
 				are presented with the prompts and run the model while diverting the output to the text file.
 				</p>
