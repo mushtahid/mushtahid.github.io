@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
 <head>
 <title>Agent-Based Model - Projects | Mushtahid's Github Website!</title>
 <meta charset="UTF-8">
@@ -189,18 +189,18 @@
 							<p>The wolves are spawned into the environment by assigning random values to their x and y 
 							coordinates.</p>
 							
-							<p>The wolves actions depend on their store value or a combination of their store value 
+							<p>The wolves' actions depend on their store value or a combination of their store value 
 							and random probability.</p>
 							
-							<p>A. If a wolf has energy less than certain minimum store value or if it has more than the 
+							<p>A. If a wolf has energy less than a certain minimum store value or if it has more than the 
 							minimum store value and probability is between the default setup of 0.25 and 0.50, it 
-							looks for food (sheep) within a certain minimum distance (proximity). If a sheep is found
-							within a certain action distance, it eats the sheep. If one or more sheep are found within
-							the proximity, it runs towards the closest one. If no close sheep is found, it moves normally.
+							looks for food (sheep) within a certain minimum distance (proximity). If one or more sheep are found within
+							the proximity, it runs towards the closest one and once the sheep is within a certain action distance, 
+							it eats the sheep. If no close sheep is found, it moves normally.
 							
 							<p>The condition - if it has more than the minimum store value and probability is between the default 
 							setup of 0.25 and 0.50 - is set up because otherwise it was observed that the wolves were not chasing or interacting with
-							the sheep even if one or more sheep were within proximity or action distance until their energy levels drop below minimum energy 
+							the sheep even if one or more sheep were within proximity or action distance until their energy levels dropped below minimum energy 
 							via normal movement. However, enabling this condition seems to have done two things:</p>
 							<ol>
 							<li>The wolves now also eat the sheep if they have more than minimum energy and probability conditions are 
