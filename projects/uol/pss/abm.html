@@ -40,7 +40,7 @@
 	<main id="body_content">
 		<article>
 			<h2>
-			What is Agent-Based Model?
+			A What is Agent-Based Model?
 			</h2>		
 			<p>
 			Traditionally, we have been collecting individual level
@@ -68,7 +68,7 @@
 		</article>
 		
 		<article>
-			<h2>The Sheep and Wolves ABM!</h2>
+			<h2>B The Sheep and Wolves ABM!</h2>
 			
 			<p>This is a simple ABM model containing a herd of sheep and a pack of wolves! This project 
 			was undertaken as part of the Programming for Social Science course of my MSc/PhD at the 
@@ -77,19 +77,19 @@
 			</p>
 			
 				<section>
-					<h3>What programming language/software was used to build this?</h3>
+					<h3>B.1 What programming language/software was used to build this?</h3>
 					<p>This was coded in Python 3 using Spyder. Extensive use of f-string is applied, and 
 					thus python 3.6 + is a requirement.
 					</p>
 				</section>
 			
 				<section>
-					<h3>Where can I access the model?</h3>
+					<h3>B.2 Where can I access the model?</h3>
 					Please visit my <a href="https://github.com/mushtahid/GEOG5995-Practicals">ABM GitHub repository</a>. 
 				</section>
 			
 			<section>
-				<h3>Core components of the ABM</h3>
+				<h3>B.3 Core components of the ABM</h3>
 				<p>The basic components of the ABM are/is the:</p>
 				<ul>
 				<li>Environment: Essentially a 300x300 Eucladean plane.</li>
@@ -101,15 +101,14 @@
 				</ul>
 					
 					<section>
-					<h4>
-						The Environment
+					<h4>B.3.1 The Environment
 						</h4>
 						<p>The environment is a 2D map that is generated from reading the raster data from 
 						<a href="https://github.com/mushtahid/GEOG5995-Practicals/blob/master/in.txt">in.txt</a>
 					</section>
 				
 					<section>
-						<h4>Animals</h4>
+						<h4>B.3.2 Animals</h4>
 						<p>
 						Animals consist of sheep and wolves. The animals have access to each other's location
 						in the environment and know how far apart they are by calculating the Euclidean distance
@@ -139,7 +138,7 @@
 						which is half of the average of both animals.</p>
 						
 							<section>
-							<h5>The Sheep</h5>
+							<h5>B.3.2.1 The Sheep</h5>
 							<p>A. The first action of a sheep is to check if any wolves are nearby within
 							a certain minimum distance. This minimum distance can be thought of as the range of 
 							vision of the sheep. This is set up by default as half of the range of vision of 
@@ -172,7 +171,10 @@
 							</section>
 						
 							<section>
-							<h5>The Wolves</h5>
+							<h5>B.3.2.2 The Wolves</h5>
+							<p>The wolves are spawned into the environment by assigning random values to their x and y 
+							coordinates.</p>
+							
 							<p>The wolves actions depend on their store value or a combination of their store value 
 							and random probability.</p>
 							
@@ -215,7 +217,7 @@
 			</section>
 			
 			<section>
-				<h3>Additional quarks of the ABM model</h3>
+				<h3>B.4 Additional quarks of the ABM model</h3>
 				<p>The model will save the environment data once it has been run to another text file. The way it's set up 
 				currently will overwrite the previous output.</p>
 				<p>It will also save the total store value of the sheep and wolves in separate text files and will add the
@@ -224,7 +226,7 @@
 			</section>
 			
 			<section>
-				<h3>How to run the Model</h3>
+				<h3>B.5 How to run the Model</h3>
 				<p>The model can be run from the command prompt by the code <code>python Final_Model.py</code>. Please ensure
 				you run cmd within the same directory.</p>
 				
@@ -246,7 +248,7 @@
 			</section>
 			
 			<section>
-				<h3>A bit about how I debugged the model</h3>
+				<h3>B.6 A bit about how I debugged the model</h3>
 				<p>
 				The first thing was to ensure random seed was enabled, and random shuffling of animals are commented out.
 				Secondly, once you run the model, it will be clear to you that this presents with extensive details of the actions of each sheep and wolf.
