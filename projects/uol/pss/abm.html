@@ -58,7 +58,7 @@
 			more accurately and thus generate a better individual and population level model. You
 			can think of this as a high-resolution image where you can see the finer details!
 			You can <a title="Learn more about ABM" target="_blank" href="https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part1/index.html">
-			learn more about ABM from the course page <i class="fas fa-external-link-alt"></i></a>.
+			learn more about ABM from the course page <i aria-hidden="true" class="fas fa-external-link-alt"></i></a>.
 			</p>
 			<p>
 			* <em>I am not in any way suggesting that individual level measures such as relative risk/odds ratio
@@ -80,13 +80,13 @@
 			Just as a side note, this website was also created as part of this project. I am an 
 			amateur web designer and have been playing intermittently with HTML (and CSS and JavaScript) ever since
 			I first came across <a rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/Yahoo!_GeoCities">
-			Yahoo! GeoCities <i class="fas fa-external-link-alt"></i></a>, 
-			<a rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/Tripod_(web_hosting)">Tripod<i class="fas fa-external-link-alt"></i></a>,
+			Yahoo! GeoCities <i aria-hidden="true" class="fas fa-external-link-alt"></i></a>, 
+			<a rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/Tripod_(web_hosting)">Tripod<i aria-hidden="true" class="fas fa-external-link-alt"></i></a>,
 			and <a rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/Microsoft_FrontPage">Microsoft FronPage 
-			<i class="fas fa-external-link-alt"></i></a> in the early 2000s. 
+			<i aria-hidden="true" class="fas fa-external-link-alt"></i></a> in the early 2000s. 
 			It has been long since the main GeoCities was shut down but if you are interested to find out what 
 			the internet looked like in those days, you can still visit 
-			<a rel="nofollow" target="_blank" href="http://www.oocities.org/">OoCities.org <i class="fas fa-external-link-alt"></i></a> 
+			<a rel="nofollow" target="_blank" href="http://www.oocities.org/">OoCities.org <i aria-hidden="true" class="fas fa-external-link-alt"></i></a> 
 			which archived some of the webpages hosted by GeoCities.
 			</p>
 			</aside>
@@ -99,7 +99,8 @@
 			
 				<section>
 					<h3>B.2 Where can I access the model?</h3>
-					Please visit my <a href="https://github.com/mushtahid/GEOG5995-Practicals">ABM GitHub repository</a>. 
+					Please visit my <a target="_blank" href="https://github.com/mushtahid/GEOG5995-Practicals">ABM GitHub repository 
+					<i aria-hidden="true" class="fas fa-external-link-alt"></i></a>. 
 				</section>
 			
 			<section>
@@ -116,7 +117,7 @@
 					<h4>B.3.1 The Environment
 						</h4>
 						<p>The environment is a 2D map that is generated from reading the raster data from 
-						<a href="https://github.com/mushtahid/GEOG5995-Practicals/blob/master/in.txt">in.txt</a>
+						<a rel="nofollow" href="https://github.com/mushtahid/GEOG5995-Practicals/blob/master/in.txt">in.txt</a>
 					</section>
 				
 					<section>
@@ -239,12 +240,11 @@
 			
 			<section>
 				<h3>B.5 How to run the Model</h3>
-				<p>The model can be run from the command prompt by the code <code>python Final_Model.py</code>. Please ensure
-				you run cmd within the same directory.</p>
+				<p>The model can be run from the command prompt by the code <code>python final_model.py</code>.</p>
 				
 				<p>The prompt will then ask you if you want to modify certain variables. There are 11 modifiable variables
 				that you can alter. A description of what each variable does will be provided. If you want to modify the variables,
-				input 'y' (lowercase and without ''). You will still have the option to run with the default values for 
+				input 'y' (lowercase and without ' '). You will still have the option to run with the default values for 
 				individual variables if you want to do so.</p>
 				
 				<p>If you do not want to modify any variable, input any other character and press enter. This will pop
@@ -254,8 +254,11 @@
 				are the white ones, and the wolves are the black ones!</p>
 				
 				<p>In the cmd, a printout of the details of each iteration will be presented. The details will include the action 
-				of each sheep, followed by the actions of each wolf! You will also see the time to process each iteration. At the end
-				of the model, you will be presented with the final number of sheep and wolves and their total store values and the total
+				of each sheep, followed by the actions of each wolf! You will also see the time to process each iteration.<p>
+				
+				<p>The model will run until all sheep are eaten by the wolves or until the number of iterations have been completed.</p>
+				
+				<p>At the end of the model, you will be presented with the final number of sheep and wolves and their total store values and the total
 				time it took to run the model for the specified number of iterations.</p>
 			</section>
 			
@@ -275,15 +278,24 @@
 				</p>
 				
 			</section>
+			
+			<section>
+				<h3>B.7 Knowen issue(s)</h3>
+				<p>
+				When the sheep are running away from the wolves in a north/north-east direction, the wolves chasing the sheep do not seem to be able to catch
+				up with the sheep until the sheep reaches the edge of the environment. This is not observed when the sheep flee in other directions.
+				</p>
+				
+			</section>
 		</article>
 	</main>
 	
 	<footer id="footer">
 		<div>
 			<p>
-			<a href="https://twitter.com/mushtahidsalam">twitter</a> | 
-			<a href="https://github.com/mushtahid">github</a> |
-			<a title="Validate the HTML & CSS via W3-Nu HTML Checker" target="_blank" 
+			<a href="https://twitter.com/mushtahidsalam"><i aria-hidden="true" class="fab fa-twitter"></i> twitter</a> | 
+			<a href="https://github.com/mushtahid"><i aria-hidden="true" class="fab fa-github"></i> github</a> |
+			<a rel="nofollow" title="Validate the HTML & CSS via W3-Nu HTML Checker" target="_blank" 
 			href="https://validator.w3.org/unicorn/check?ucn_uri=https://mushtahid.github.io/projects/uol/pss/abm.html&ucn_task=conformance#">
 			validate html & css <i class="fas fa-external-link-alt"></i></a>
 			</p>
