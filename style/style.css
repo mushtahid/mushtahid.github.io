@@ -21,10 +21,9 @@ a:hover{text-decoration: underline; color: #FF5733}
 			 
 #footer{margin:1% 5%; text-align: center; display: block;}
 #footer p{font-size:12px}
-#footer div{clear: both;
+#footer div{clear: both;}
 
-code {color: #001ADD; background-color: #E7E6E6;
-}
+code {color: #001ADD; background-color: #E7E6E6;}
 
 figure img {display: block; margin: auto; max-width: 100%; height: auto;}
 figure figcaption {text-align: center;}
