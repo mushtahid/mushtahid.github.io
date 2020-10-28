@@ -31,5 +31,6 @@ figure img {display: block; margin: auto; max-width: 100%; height: auto;}
 figure figcaption {text-align: center;}
 
 #copyr {clear:both;}
-#copyr p{text-align:center; line-height:10px; color:#464646;}
-#copyr a{text-decoration: none; color:#6B6B6B}
+#copyr p{text-align:center; line-height:10px; color:#7C7C7C;}
+#copyr a{text-decoration: none; color:#6B6B6B;}
+#copyr a:hover{text-decoration: underline; color: #FF5733;} 
