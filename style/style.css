@@ -25,6 +25,5 @@ a:hover{text-decoration: underline; color: #FF5733}
 code {color: #001ADD; background-color: #E7E6E6;
 }
 
-figure {display: block;}
-figure img {margin: auto; max-width: 100%; height: auto;}
+figure img {display: block;margin: auto; max-width: 100%; height: auto;}
 figure figcaption {text-align: center;}
