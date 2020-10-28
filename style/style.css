@@ -2,7 +2,7 @@ h1 {margin-top: 28px; margin-bottom: 10px}
 
 p {text-align: justify; line-height:25px; font-size:15px}
 
-div {font-family:verdana}
+body {font-family: Verdana}
 
 a{text-decoration: none; color:#C70039}
 a:hover{text-decoration: underline; color: #FF5733} 
@@ -24,7 +24,7 @@ a:hover{text-decoration: underline; color: #FF5733}
 
 code {color: #001ADD; background-color: #E7E6E6;
 }
+<!-- img {margin: auto; display: block; max-width: 100%; height: auto} -->
 
-figure {margin: auto}
-
-img {margin: auto; max-width: 100%; height: auto}
+figure img {margin: auto; max-width: 100%; height: auto;}
+figure figcaption {text-align: center;}
