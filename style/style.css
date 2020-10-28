@@ -19,7 +19,7 @@ a:hover{text-decoration: underline; color: #FF5733}
 			 border-bottom-style: solid;
 			 padding: 5px}
 			 
-#footer{margin:1% 5%; text-align: center;}
+#footer{margin:1% 5%; text-align: center; display: block;}
 #footer p{font-size:12px}
 
 code {color: #001ADD; background-color: #E7E6E6;
