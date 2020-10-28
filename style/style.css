@@ -21,7 +21,7 @@ a:hover{text-decoration: underline; color: #FF5733}
 			 
 #footer{margin:1% 5%; text-align: center; display: block;}
 #footer p{font-size:12px}
-#footer div{clear: both;}
+#footer div{overflow: auto;}
 
 code {color: #001ADD; background-color: #E7E6E6;}
 
