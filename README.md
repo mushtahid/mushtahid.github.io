@@ -1,5 +1,5 @@
 # mushtahid.github.io
-Personal website of [Md Mushtahid Salam](https://mushtahid.github.io/).
+Personal website of [Md Mushtahid Salam](https://mushtahid.github.io/). Coded in HTML5 and CSS3.
 
 ## Plans for future
 1. Add more content!
