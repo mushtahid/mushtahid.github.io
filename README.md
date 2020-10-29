@@ -4,7 +4,7 @@ Personal website of [Md Mushtahid Salam](https://mushtahid.github.io/).
 ## Plans for future
 1. Add more content!
 2. Implement [Schema.org](https://schema.org/) microdata markup in conjunction with [Google structured data](https://developers.google.com/search/docs/guides/intro-structured-data).
-3. Implementt the [Open Graph protocol](https://ogp.me/) metadata.
+3. Implement the [Open Graph protocol](https://ogp.me/) metadata.
 4. Add table of content to long pages.
 
 ## Website Licecnse
