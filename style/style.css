@@ -8,9 +8,9 @@ a{text-decoration: none; color:#C70039}
 a:hover{text-decoration: underline; color: #FF5733} 
 
 #container {margin: 5%;
-			padding: 5px 5px 20px; 
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* box-shadow code is from https://www.w3schools.com/css/css3_shadows_box.asp */
-			overflow: auto;}
+	   padding: 5px 5px 20px; 
+	   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* box-shadow code is from https://www.w3schools.com/css/css3_shadows_box.asp */
+	   overflow: auto;}
 
 #head_content {text-align: center; padding: 15px 15px 7px; font-size:25px}
 #head_content p {font-size:15px; text-align:center; margin-top: 5px; margin-bottom: 2px}
@@ -19,8 +19,8 @@ a:hover{text-decoration: underline; color: #FF5733}
 
 #body_content{margin:1% 5%; 
              border-top-style: solid; 
-			 border-bottom-style: solid;
-			 padding: 5px;}
+	     border-bottom-style: solid;
+	     padding: 5px;}
 			 
 #footer{margin:1% 5%; text-align: center; display: block;}
 #footer p{font-size:12px; margin: 2px 0px;}
